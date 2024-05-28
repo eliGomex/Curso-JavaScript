@@ -7,7 +7,7 @@ const nome = 'Elian Marcel';
 const sobrenome = 'Carvalho Gomes';
 const idade = 30;
 const peso = 84;
-const alturaEmM = 1.80; // Corrigido para metros (ao invés de cm)
+const alturaEmCm = 1.80; // Corrigido para metros (ao invés de cm)
 let indiceMassaCorporal; // peso / (altura * altura)
 let anoNascimento;
  
