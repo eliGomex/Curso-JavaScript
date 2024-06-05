@@ -7,5 +7,5 @@
  // console.log(num1.toFixed(2)); casas decimais
  // console.log(Number.isInteger(num1)) verifica se é number
  // let temp = num1 * 'ola';
- // console.log(Number.isNaN(temp));
+ // console.log(Number.isNaN(temp)); //verifica se é Not a number NaN
  // 
