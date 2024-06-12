@@ -2,7 +2,8 @@
 const form = document.querySelector('#form');
 
 form.addEventListener('submit', function(evento){
-    evento.preventDefault();
+    evento .preventDefault();
+   
     const inputPeso = evento.target.querySelector('#peso');
     const inputAltura = evento.target.querySelector('#altura');
 
