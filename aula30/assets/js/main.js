@@ -3,7 +3,7 @@ const data = new Date();
 h1.innerHTML = data.toString();
 
 
-function getDiaSemanaTexto (diaSemana) {
+function getDiaSemanaTexto ( diaSemana) {
     let diaSemanaTexto;
 
     switch (diaSemana) {
@@ -32,47 +32,54 @@ function getDiaSemanaTexto (diaSemana) {
 }
 
 function getNomeMes (numeroMes) {
-    let numeroMes;
+    let nomeMes;
 
     switch (numeroMes) {
     case 0:
-        diaSemanaTexto = 'janeiro';
-        return numeroMes;
+        nomeMes = 'janeiro';
+        return nomeMes;
     case 1:
-        diaSemanaTexto = 'fevereiro';
-        return numeroMes;
+        nomeMes = 'fevereiro';
+        return nomeMes;
     case 2:
-        diaSemanaTexto = 'março';
-        return numeroMes;
+        nomeMes = 'março';
+        return nomeMes;
     case 3:
-        diaSemanaTexto = 'abril';
-        return numeroMes;
+        nomeMes = 'abril';
+        return nnomeMes;
     case 4:
-        diaSemanaTexto = 'maio';
-        return numeroMes;
+        nomeMes = 'maio';
+        return nomeMes;
     case 5:
-         diaSemanaTexto = 'junho';
-        return numeroMes;
+        nomeMes = 'junho';
+        return nomeMes;
     case 6:
-        diaSemanaTexto = 'julho';
-        return numeroMes;
+        nomeMes = 'julho';
+        return nomeMes;
     case 7:
-        diaSemanaTexto = 'agosto';
-        return numeroMes;
+        nomeMes = 'agosto';
+        return nomeMes;
     case 8:
-        diaSemanaTexto = 'setembro';
-        return numeroMes;
+        nomeMes = 'setembro';
+        return nomeMes;
     case 9:
-        diaSemanaTexto = 'outubro';
-        return numeroMes;
+        nomeMes = 'outubro';
+        return nomeMes;
     case 10:
-        diaSemanaTexto = 'novembro';
-        return numeroMes;
+        nomeMes = 'novembro';
+        return nomeMes;
     case 11:
-        diaSemanaTexto = 'dezembro ';
-        return numeroMes;
+        nomeMes = 'dezembro ';
+        return nomeMes;
     }
 }
 
+function criaData(data) {
+    const diaSemana = data.getDay();
+    const numeroMes = data.getMonth();
 
-h1.innerHTML = getDiaSemanaTexto(data.getDay());
+    const nomeDia = getDiaSemanaTexto(diaSemana);
+    const nomeMes = getNomeMes(numeroMes);
+
+}
+h1.innerHTML = criaData(data)
