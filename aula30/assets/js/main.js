@@ -81,5 +81,8 @@ function criaData(data) {
     const nomeDia = getDiaSemanaTexto(diaSemana);
     const nomeMes = getNomeMes(numeroMes);
 
+    return (`${nomeDia}, ${data.getDate()} de ${nomeMes}` +
+            ` de ${data.getFullYear()} ${data.getHours()} : ${data.getMinutes()}`
+);
 }
 h1.innerHTML = criaData(data)
